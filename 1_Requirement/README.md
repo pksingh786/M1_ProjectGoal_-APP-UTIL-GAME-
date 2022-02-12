@@ -11,7 +11,7 @@ The Key features of quiz are: 1.deposit money 2.withdraw money 3.Check balance 4
 
 2.Visual studio Code
 
-# SWOT Analysis:
+# SWOT Analysis
 Strength
 It is user friendly where user can activly participate.
 
