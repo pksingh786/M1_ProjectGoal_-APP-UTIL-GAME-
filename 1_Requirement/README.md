@@ -61,13 +61,13 @@ Sometimes it show error
 * It can be used by every people who have an ATM card for any BANK.This is a very useful application by which a user able to perform certain operations like check bank balance,update balance etc.
 
 # What
-* The project is main aim is to see the feature of banking system.
+* The project is main aim is to do very clean ,smooth and secure transactions.
 
 # When
 * This application can be very helpful when someone is travelling or enjoying somewhere and want money to purchase something then this is very important.
 
 # Why
-* The project is mainly for the needy people as well as Intrested person can also see the working.
+* The project is mainly for the needy people  as well as Intrested person can also see the working.
 
 # How
 * The user can use this by selecting the operation & You will access your card only when:If you have an any account in any bank & must have an ATM CARD.
