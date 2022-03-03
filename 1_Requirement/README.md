@@ -39,22 +39,22 @@ The Key features of This mini Project are:-
 
 # SWOT Analysis
 # Strength
-Deposit money
-Withdraw money
-check bank balance
-update money
+* Deposit money
+* Withdraw money
+* check bank balance
+* update money
 
 # Weakness
-Never share ATM card and PIN with other
+* Never share ATM card and PIN with other
 
 # Opportunities
-Very clean and smooth transaction
-It is very safe to use
-You can use any atm to any machine
+* Very clean and smooth transaction
+* It is very safe to use
+* You can use any atm to any machine
 
 # Threat
-Some times in ATM's money is not there
-Sometimes it show error
+* Some times in ATM's money is not there
+* Sometimes it show error
 
 # 4W's and 1H
 # Who
