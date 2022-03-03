@@ -12,3 +12,5 @@
 https://api.codiga.io/project/31529/status/svg
 
 https://api.codiga.io/project/31529/score/svg
+
+https://app.codiga.io/public/project/31529/M1_ProjectGoal_-APP-UTIL-GAME-/dashboard
