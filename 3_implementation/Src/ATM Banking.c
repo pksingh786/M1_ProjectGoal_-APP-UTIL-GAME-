@@ -1,3 +1,9 @@
+/**
+ * ATM banking
+ * @copyright Copyright (c) 2022
+ * Hello everyone this is my Mini project on ATM banking using C programming
+ * Some of the Idea taken from Youtube
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -15,8 +21,8 @@ void errorMessage();
 //Main Programme
 int main() {
     int option;
-    float balance = 15000.00;
-    int choose;
+    float balance = 12500.00;     //current balance
+    int choose;                   // choice available for doing operations
     
     bool again = true;
     while (again) {
@@ -29,32 +35,43 @@ int main() {
     
         switch (option) {
             case 1:
+            	
             	system("CLS");
                 checkBalance(balance);
                 break;
+                
             case 2:
+            	
             	system("CLS");
                 balance = moneyDeposit(balance);
                 break;
+                
             case 3:
+            	
             	system("CLS");
                 balance = moneyWithdraw(balance);
                 break;
             
             case 4:
+            	
             	system("CLS");
                 menuExit();
                 return 0;
                 
             default:
+            	
                 errorMessage();
                 break;
         }
         
         printf("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+        
         printf("Would you like to do another transaction:\n");
+        
         printf("< 1 > Yes\n");
+        
         printf("< 2 > No\n");
+        
         scanf("%d", &choose);
         
         system("CLS");
@@ -62,7 +79,9 @@ int main() {
         
         
         if (choose == 2) {
+        	
             again = false;
+            
             menuExit();
             
         }
@@ -89,54 +108,73 @@ void mainMenu() {
 }//Main Menu
 
 void checkBalance(float balance) {
+	
     printf("with this option you See your Balance\n");
+    
     printf("\n\n****Your Available Balance is:   $%.2f\n\n", balance);
     
 }//Check Balance
 
 float moneyDeposit(float balance) {
     float deposit;
+    
     printf("with this option you will Deposit a money\n");
+    
     printf("$$$$Your Balance is: $%.2f\n\n", balance);
+    
     printf("****Enter your amount to Deposit\n");
+    
     scanf("%f", &deposit);
     
     
     balance += deposit;
     
     printf("\n****Your New/updated Balance is:   $%.2f\n\n", balance);
+    
     return balance;
     
 }//money deposit
 
 float moneyWithdraw(float balance) {
     float withdraw;
+    
     bool back = true;
     
     printf("with this option you Withdraw a money\n");
+    
     printf("$$$$Your Balance is: $%.2f\n\n", balance);
     
     while (back) {
+    	
     printf("Enter your amount to withdraw:\n");
+    
     scanf("%f", &withdraw);
     
     
     if (withdraw < balance) {
         back = false;
+        
         balance -= withdraw;
+        
         printf("\n$$$$Your withdrawing money is:  $%.2f\n", withdraw);
+        
         printf("****Your New/updated Balance is:   $%.2f\n\n", balance);
         
     }
     
+    
         else  {
         
         printf("You don't have enough money\n");
+        
         printf("Please contact to your Bank Customer Services\n");
+        
         printf("****Your Balance is:   $%.2f\n\n", balance);
     
     }
+    
     }
+    
     return balance;
     
     
@@ -144,12 +182,14 @@ float moneyWithdraw(float balance) {
 
 void menuExit() {
     printf("--------------Take your receipt!!!------------------\n");
+    
     printf("-----Thank you for using ATM Banking Machine!!!-----\n");
     
     
 }//exit menu
 
 void errorMessage() {;
+
     printf("You selected invalid number!!\n");
 }//error message
 
