@@ -11,7 +11,7 @@ VPATH = SRC INCLUDE
 
 #All source code files
 SRC = main.c\
-src/atm.c
+src/atm_machine.c
 
 # All test source files
 TEST_SRC = src/atm.c\
